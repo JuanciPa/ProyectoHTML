@@ -1,0 +1,48 @@
+/* Estilos para los títulos de sección */
+.titulo-seccion {
+    font-size: x-large; /* Tamaño grande para el título */
+    font-style: italic; /* Aplica estilo en cursiva */
+}
+
+/* Contenedor principal de la sección de compra */
+.compra {
+    display: flex; /* Organizar elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto*/
+    padding-top: 50px; /* Añade espacio superior de 50 píxeles */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para cada producto de zapato */
+.zapato {
+    width: 20%; /* Cada zapato ocupa el 25% del ancho del contenedor */
+}
+
+/* Imagen dentro de cada zapato */
+.zapato img {
+    height: 190px; /* Fija la altura de la imagen */
+}
+
+/* Estilo para el título de cada zapato */
+.zapato h3 {
+    padding-top: 10px; /* Espaciado superior para separar del contenido anterior */
+}
+
+/* Media Query para móviles (máx. 768px) */
+@media (max-width: 768px) {
+    
+    .zapato {
+        width: 20%; /* Cada zapato ocupa el 25% del ancho del contenedor */
+    }
+
+    .zapato img {
+        width: 95%; /* La imagen se ajusta al 95% del ancho disponible */
+        height: 60%; /* Reduce la altura proporcionalmente */
+    }
+
+    button {
+        width: 95%; /* El botón ocupa casi todo el ancho disponible */
+        padding: 7px 0; /* Espaciado interno */
+    }
+}

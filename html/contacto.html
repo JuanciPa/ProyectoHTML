@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/generico.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="menu-item"><img src="../Imagenes/Logos/Logo.png" alt="" id="logo-image"></a>
+            <h2>ALL<span>SHOES</span></h2>
+        </div>
+        <nav class="main-menu">
+            <a href="../index.html" class="menu-item">INICIO</a>
+            <a href="../html/sobre-nosotros.html" class="menu-item">NOSOTROS</a>
+            <a href="../html/cursos.html" class="menu-item">CURSOS</a>
+            <a href="../html/tienda.html" class="menu-item">TIENDA</a>
+        </nav>
+        <nav class="main-menu-desplegable">
+            <ul>
+                <li>
+                    <a href="#">☰</a>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">INICIO</a></li>
+                        <li><a href="../html/sobre-nosotros.html" class="menu-item">NOSOTROS</a></li>
+                        <li><a href="../html/cursos.html" class="menu-item">CURSOS</a></li>
+                        <li><a href="../html/tienda.html" class="menu-item">TIENDA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo-seccion">CONTACTO</div>
+        <div class="contenido">
+            <div class="dudas">
+                <h1>¿TIENES ALGUNA DUDA?</h1>
+                <p id="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae provident ea quam quidem
+                    similique molestias maxime ipsam reiciendis assumenda velit tempore quaerat debitis eligendi odit
+                    minus, officiis aliquid magni.</p>
+                <h3>E-mail:</h3>
+                <p>info@allshoes.es</p>
+                <h3>Redes sociales:</h3>
+                <div class="redes-sociales">
+                    <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">
+                        <img src="../Imagenes/RedesSociales/telegram-icon.png" alt="Telegram" class="icono telegram">
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../Imagenes/RedesSociales/whatsapp-logo.png" alt="Whatsapp" class="icono whatsapp">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../Imagenes/RedesSociales/twitter-icon.png" alt="Twitter" class="icono twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../Imagenes/RedesSociales/instagram-logo.png" alt="Instagram" class="icono instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../Imagenes/RedesSociales/facebook-icon.png" alt="Facebook" class="icono facebook">
+                    </a>
+                    <a href="../index.html">
+                        <img src="../Imagenes/Logos/Logo.png" class="logo-central">
+                    </a>
+                </div>
+            </div>
+            <div class="formulario">
+                <form action="https://formspree.io/f/xbldnenr" method="post">
+                    <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" required>
+                    <input type="email" id="email" name="email" placeholder="CORREO (CORREO@EMAIL.COM)">
+                    <input type="tel" id="telefono" name="telefono" placeholder="TELEFONO (+34 XXX XXX XXX)">
+                    <select id="tema" name="tema" required>
+                        <option value="">TEMA</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="facturacion">Facturación</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    <textarea id="mensaje" name="mensaje" placeholder="MENSAJE" rows="5" cols="40"></textarea>
+                    <div class="condiciones">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Aceptar
+                            <a href="">condiciones</a>
+                        </label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    </main>
+</body>
+
+</html>

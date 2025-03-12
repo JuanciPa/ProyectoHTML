@@ -1,0 +1,128 @@
+/* Estilos para la sección de portada */
+.portada {
+    background-image: url(../Imagenes/Carroussel/Carroussel-1.webp); /* Imagen de fondo */
+    background-size: auto 180%; /* Escala la imagen para cubrir la sección */
+    background-position: bottom; /* Asegura que la imagen esté alineada en la parte inferior */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+    height: 600px; /* Altura fija */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    color: white; /* Texto en color blanco para mayor contraste */
+     /* Agrega una transición suave al cambiar la altura */
+}
+
+/* Estilos para el título dentro de la portada */
+.portada h2 {
+    width: 1%; /* Ocupa el espacio mínimo necesario */
+    font-size: 30px; /* Tamaño de fuente grande */
+}
+
+/* Sección de descripción y artículos */
+.descripcion-articulos {
+    display: flex; /* Usa flexbox para organizar el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye los elementos equitativamente */
+    padding-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    width: 50%; /* Ocupa la mitad del ancho disponible */
+    color: var(--main-color); /* Usa la variable de color principal */
+    font-size: 1rem; /* Tamaño de fuente normal */
+    line-height: 1.5; /* Aumenta la separación entre líneas para mejorar la legibilidad */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para los párrafos dentro de la descripción */
+.descripcion p {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: justify; /* Justifica el texto para mejorar la presentación */
+    color: black; /* Texto en color negro */
+}
+
+/* Estilos para el botón dentro de la descripción */
+.descripcion button {
+    background-color: var(--main-color); /* Color de fondo */
+    color: white; /* Texto en color blanco */
+    padding: 12px 20px; 
+    border: none; /* Elimina el borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    margin-top: 10px; /* Espaciado superior */
+    width: 100%; /* Ocupa el 100% del div*/
+}
+.descripcion a.menu-item{
+    width: 170px;
+}
+
+.imagenes-articulos {
+    width: 45%; /* Ocupa todo el ancho disponible */
+    display: flex; /* Usa flexbox */
+    column-gap: 20px; /* Espaciado entre las imágenes */
+    justify-content: end; /* Alinea las imágenes a la derecha */
+}
+
+/* Estilos para las imágenes de los zapatos */
+.zapatos img {
+    width: 100%; /* Ancho fijo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Media Query para pantallas grandes (más de 1300px) */
+@media (max-width: 1300px) {
+    .portada {
+        background-size: auto 165%; /* Ajusta el tamaño del fondo */
+        height: 450px; /* Reduce la altura */
+    }
+    
+    .zapatos img {
+        width: 100%; /* Ajusta el ancho al contenedor */
+    }
+}
+@media (max-width: 900px) {
+    .portada {
+        background-size: auto 165%; /* Ajusta el tamaño del fondo */
+        height: 450px; /* Reduce la altura */
+    }
+    
+    .zapatos img {
+        width: 100%; /* Ajusta el ancho al contenedor */
+    }
+    
+    .imagenes-articulos {
+        display: grid; /* Cambia el layout a una cuadrícula */
+        gap: 10px; /* Espaciado entre las imágenes */
+        width: 45%; /* Ocupa la mitad del ancho disponible */
+    }
+
+
+    /* Hace que el tercer elemento de zapatos ocupe dos columnas */
+    .zapatos:nth-child(3) {
+        grid-column: span 2; /* Hace que la segunda foto ocupe 2 columnas */
+    }
+}
+
+/* Media Query para móviles (máx. 768px) */
+@media (max-width: 768px) {
+    .portada {
+        background-size: auto 150%; /* Ajusta el tamaño del fondo */
+        height: 300px; /* Reduce la altura */
+    }
+    
+    .zapatos img {
+        width: 100%; /* Ajusta el ancho al contenedor */
+    }
+    
+    .descripcion {
+        width: 45%; /* Reduce el ancho */
+    }
+
+    button {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}

@@ -1,0 +1,60 @@
+/* Estilo para los títulos de sección, en tamaño x-large y en cursiva */
+.titulo-seccion {
+    font-size: x-large; /* Tamaño de fuente grande */
+    font-style: italic; /* Aplica estilo en cursiva */
+}
+
+/* Estilo para la descripción, con margen y distribución flexible */
+.descripcion {
+    margin: 10px; /* Añade margen de 10px */
+    display: flex; /* Usa Flexbox para organizar los elementos */
+    width: 98%; /* Establece el ancho en 98% */
+    gap: 20px; /* Añade un espacio de 20px entre los elementos */
+}
+
+/* Estilo para los encabezados h2, con tamaño de fuente x-large */
+h2 {
+    font-size: x-large; /* Tamaño de fuente grande */
+}
+
+/* Estilo para los elementos con clase h2, organizados en columna */
+.h2 {
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    width: 100%; /* El ancho ocupa el 100% del contenedor */
+}
+
+/* Estilo para las imágenes dentro de un div */
+div img {
+    margin: 10px 0; /* Añade margen de 10px arriba y abajo */
+    width: 100%; /* Establece el ancho de la imagen al 100% */
+    height: auto; /* Ajusta la altura proporcionalmente */
+}
+
+/* Estilo para el texto de las horas, en negrita */
+.horas {
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+/* Estilo para los divs dentro de las clases .falsificaiones y .diseño */
+.falsificaiones div, .diseño div {
+    justify-items: end; /* Alinea los elementos hijos al final de sus contenedores */
+}
+
+/* Estilo específico para las imágenes dentro de .diseño */
+.diseño img {
+    justify-self: end; /* Alinea la imagen al final del contenedor */
+}
+
+/* Estilo para los botones, con fondo gris claro y texto blanco */
+button {
+    background-color: lightgray; /* Fondo gris claro */
+    color: white; /* Texto blanco */
+    padding: 2px 30px;
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+    font-weight: bold; /* Texto en negrita */
+    align-items: end; 
+    border: 2px solid lightgray
+}

@@ -1,0 +1,102 @@
+header {
+    display: flex; /* Usa flexbox para organizar los elementos en línea */
+    justify-content: space-between; /* Espacia los elementos entre sí (uno a la izquierda y otro a la derecha) */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 40px; /* Define una altura fija para el header */
+    background-color: var(--main-color); /* Usa el color principal como fondo */
+    padding: 0 20px; /* Añade un relleno lateral de 20px */
+}
+
+/* Estilos para enlaces dentro del header */
+header a:link, a:visited, a:hover, a:active {
+    color: white; /* Hace que los enlaces sean blancos en todos los estados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: medium; /* Tamaño de fuente medio */
+}
+
+nav.main-menu {
+    display: flex; /* Usa flexbox para organizar los elementos del menú */
+    width: 60%; /* Ocupa el 60% del ancho del header */
+    justify-content: space-around; /* Espacia los elementos del menú equitativamente */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+div.logo-container {
+    display: flex; /* Usa flexbox para alinear el logo y el texto */
+    align-items: center; /* Centra los elementos verticalmente */
+    column-gap: 10px; /* Espaciado de 10px entre el logo y el texto */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+
+/* Estilos para el texto dentro de logo-container */
+div.logo-container > h2 {
+    font-size: 24px; /* Tamaño de fuente grande */
+    color: white; /* Color de texto blanco */
+    font-weight: normal; /* Peso de la fuente normal */
+}
+
+/* Estilo especial para la palabra dentro del span */
+div.logo-container > h2 > span {
+    color: darkorange; /* Hace que el texto dentro del <span> sea naranja oscuro */
+}
+
+/* Establece el tamaño del logo */
+div.logo-container #logo-image {
+    width: 40px; /* Define un ancho fijo para el logo */
+}
+
+/* Estilos para los títulos de sección */
+.titulo-seccion {
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Añade espacio alrededor del título */
+    background-color: white; /* Fondo blanco */
+    color: var(--main-color); /* Usa el color principal para el texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    font-size: 1.5rem; /* Define un tamaño de fuente de 1.5rem */
+    border-bottom: 2px solid var(--main-color); /* Línea inferior con el color principal */
+}
+
+/* Media Query para pantallas mayores a 768px */
+@media (min-width: 768px) {
+    nav.main-menu-desplegable {
+        display: none; /* Oculta el menú desplegable en pantallas grandes */
+    }
+}
+
+/* Media Query para móviles (máx. 768px) */
+@media (max-width: 768px) {
+
+    div.logo-container {
+        width: 100%; /* Hace que el contenedor del logo ocupe todo el ancho disponible */
+    }
+
+    nav.main-menu {
+        display: none; /* Oculta el menú principal en móviles */
+    }
+    
+    /* Estilos para los elementos del menú desplegable */
+    .main-menu-desplegable li {
+        position: relative; /* Mantiene la posición relativa para que los submenús sean posicionados respecto a él */
+        display: block; /* Hace que los elementos del menú ocupen toda la línea */
+    }
+    
+    /* Oculta los submenús por defecto */
+    .main-menu-desplegable li ul {
+        position: absolute; /* Permite que el submenú se posicione fuera del flujo normal */
+        top: 100%; /* Posiciona el submenú justo debajo del elemento padre */
+        right: 0; /* Alinea el submenú a la derecha */
+        background: var(--main-color); /* Usa el color principal como fondo */
+        display: none; /* Lo oculta por defecto */
+    }
+    
+    /* Ajusta los enlaces dentro del menú desplegable */
+    .main-menu-desplegable li a {
+        padding: 10px; /* Espaciado interno para mejor interacción */
+        display: block; /* Hace que el enlace ocupe toda la línea */
+    }
+    
+    /* Muestra el submenú cuando el usuario pasa el ratón sobre el elemento */
+    .main-menu-desplegable li:hover ul {
+        display: block; /* Hace que el submenú aparezca */
+    }
+}

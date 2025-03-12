@@ -1,0 +1,89 @@
+/* Estilos para los títulos de sección */
+.titulo-seccion {
+    font-size: x-large; /* Tamaño de fuente grande */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Sección principal que contiene la descripción y la imagen */
+.principal {
+    display: flex; /* Usa flexbox para organizar los elementos en fila */
+    margin-bottom: 20px; /* Espaciado inferior */
+    padding: 20px; /* Espaciado interno */
+    gap: 40px; /* Espaciado entre los elementos internos */
+    max-width: 768px; /* Ancho máximo de la sección */
+    margin: auto; /* Centra la sección en la página */
+}
+
+/* Estilos para la sección de descripción */
+.descripcion {
+    width: 50%; /* Ocupa la mitad del contenedor */
+    font-size: 1rem; /* Tamaño de fuente normal */
+    line-height: 1.5; /* Espaciado entre líneas para mejor lectura */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espaciado entre los elementos internos */
+}
+
+/* Estilos generales para los párrafos */
+p {
+    font-weight: lighter; /* Texto con menor grosor */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilo especial para resaltar un sujeto en negrita */
+#sujeto {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para la imagen de fondo dentro de un div */
+div.image {
+    background-image: url(../Imagenes/Tienda/Tienda-1.webp); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    background-position: bottom; /* Alinea la imagen en la parte inferior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 300px; /* Ancho fijo */
+    padding: 20px; /* Espaciado interno */
+    height: 300px; /* Altura fija */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    color: white; /* Texto en color blanco para mejor contraste */
+}
+
+/* Estilos para el logo de la empresa */
+.empresa-logo {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    column-gap: 10px; /* Espaciado entre el logo y el texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Cambia el color de la palabra clave dentro del logo */
+.empresa-logo > h2 > span {
+    color: darkorange; /* Color naranja oscuro */
+}
+
+/* Ajusta el tamaño del logo */
+.empresa-logo #logo-image {
+    width: 40px; /* Ancho fijo */
+}
+
+/* Contenedor de las redes sociales */
+.redes-sociales {
+    width: 20px; /* Ancho fijo */
+    display: flex; /* Usa flexbox */
+    row-gap: 5px; /* Espaciado entre los elementos */
+}
+
+/* Media Query para móviles (máx. 768px) */
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column; /* Cambia el diseño a una columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .descripcion {
+        width: 90%; /* Aumenta el ancho de la descripción */
+    }
+}

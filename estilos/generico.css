@@ -1,0 +1,37 @@
+:root {
+    --main-color: rgb(34, 34, 34); /* Define una variable CSS llamada --main-color con un color gris oscuro */
+}
+
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Hace que el tamaño de los elementos incluya el padding y el borde, evitando que aumente el tamaño total */
+    transition: height 0.5s ease; /* Agrega una transición suave al cambiar la altura de los elementos */
+}
+
+html {
+    font-size: 10px; /* Define un tamaño base de fuente de 10px para facilitar el uso de medidas en rem */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat a toda la página */
+    line-height: 1.5; /* Establece la altura de línea en 1.5 veces el tamaño de la fuente para mejorar la legibilidad */
+}
+
+header {
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px al header, separándolo de los elementos siguientes */
+}
+
+main {
+    border-top: 2px solid var(--main-color); /* Agrega una línea superior de 2px con el color definido en --main-color */
+    padding: 10px; /* Agrega un espacio interno de 10px dentro del main */
+}
+
+button {
+    background-color: var(--main-color); /* Color de fondo definido como variable*/
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    margin-top: 10px; 
+    width: 100%; 
+    font-weight: bold; 
+}
